@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>교회소개</title>
+  <style>
+    body {
+      background-size: cover;
+      text-align: center;
+      background-color: #f7f7f7;
+      font-family: "Gowun Dodum", sans-serif;  
+    }
+
+    /* Gowun Dodum 폰트 로드 */
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+    h1 {
+      text-align: center;
+      color: #333;
+      padding: 20px 0;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .vision-card {
+  background-image: url("1_church_big.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.vision-card::before {
+ content: "";
+ background-color: rgba(0, 0, 0, 0.596);
+ position: absolute;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+}
+
+.vision-card h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  padding-left: 100px;
+  line-height: 1.6;
+}
+
+.core-values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.core-value--1 h2,
+.core-value--2 h2,
+.core-value--3 h2,
+.core-value--4 h2,
+.core-value--5 h2,
+.core-value--6 h2,
+.core-value--7 h2 {
+  font-size: 24px;
+  margin-bottom: 1px;
+  font-weight: bold;
+  margin-top: 113px;
+}
+
+.core-value--1 p,
+.core-value--2 p,
+.core-value--3 p,
+.core-value--4 p,
+.core-value--5 p,
+.core-value--6 p,
+.core-value--7 p {
+  margin: 0; /* 기본적인 margin 초기화 */
+  line-height: 1.7; /* 줄 간격 설정 */
+  height: 0px; /* <div> 요소의 높이 조정 */
+}
+
+
+.core-value--1 {
+  background-color: #faecec;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-image: url("church_icon/bible.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+
+.core-value--2 {
+ background-color: #fff8f0;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ margin: 20px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-image: url("church_icon/church.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+
+.core-value--3 {
+ background-color: #fffff0; 
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ margin: 20px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-image: url("church_icon/sheep.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+
+.core-value--4 {
+ background-color: #f0fff0;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ margin: 20px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-image: url("church_icon/contents.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+
+.core-value--5 {
+ background-color: #dbf5fe; 
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ margin: 20px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-image: url("church_icon/pray.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+
+.core-value--6 {
+ background-color: #cfe9ff;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ margin: 20px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-image: url("church_icon/love.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+.core-value--7 {
+ background-color: #e6e6fa; 
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ margin: 20px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-image: url("church_icon/earth.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <h1>성찬교회는</h1>
+
+  <div class="card vision-card">
+    <h2>하나님의 소망을<br>이루어가는 교회입니다.<br><br>철저하리만큼<br>성령의 인도하심에 따라<br>생명과 참 신앙에 전부를 걸고,<br>
+    목자 되신 예수님의 생명으로<br>생명이 회복된 삶을 살아가는<br>교회입니다.</h2>
+  </div>
+
+  <div class="card">
+    <h2>VISION<br>성찬교회 7대 핵심 사역</h2>
+    <div class="core-values">
+      <div class="core-value--1">
+        <h2>말씀</h2>
+        <p>Preaching Good News</p>
+      </div>
+      <div class="core-value--2">
+        <h2>예배</h2>
+        <p>Renew in God</p>
+      </div>
+      <div class="core-value--3">
+        <h2>양육</h2>
+        <p>Obedience of the Word of God</p>
+      </div>
+      <div class="core-value--4">
+        <h2>컨텐츠</h2>
+        <p>Variety of Missions</p>
+      </div>
+      <div class="core-value--5">
+        <h2>기도</h2>
+        <p>Identity in Christ</p>
+      </div>
+      <div class="core-value--6">
+        <h2>헌신</h2>
+        <p>Dedication toward God</p>
+      </div>
+      <div class="core-value--7">
+        <h2>선교</h2>
+        <p>Equipment for the Salvation</p>
+
+</body>
+
+</html>
